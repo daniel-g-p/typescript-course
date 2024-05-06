@@ -1,0 +1,10 @@
+TypeScript
+
+- Number
+- String
+- Boolean
+- Object
+- Array
+- Tuple
+- Enum
+- Any
