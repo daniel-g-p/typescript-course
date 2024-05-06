@@ -1,4 +1,4 @@
-TypeScript
+Basic Types
 
 - Number
 - String

@@ -1,0 +1,5 @@
+Advanced Types
+
+- Union Types
+- Literal Types
+- Type Aliases

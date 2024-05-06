@@ -1,0 +1,4 @@
+Compiler
+
+- Watch a specific file: "tsc file.ts -w"
+- Configure full TypeScript directory: "tsc --init"

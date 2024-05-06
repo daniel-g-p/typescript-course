@@ -28,15 +28,22 @@ button.addEventListener("click", function () {
         " = " +
         added);
 });
+var Fuel;
+(function (Fuel) {
+    Fuel[Fuel["GASOLINE"] = 0] = "GASOLINE";
+    Fuel[Fuel["DIESEL"] = 1] = "DIESEL";
+    Fuel[Fuel["ELECTRIC"] = 2] = "ELECTRIC";
+})(Fuel || (Fuel = {}));
 var car = {
     brand: "Fiat",
     model: "500",
     topSpeed: 150,
-    electric: false,
+    automatic: false,
     colors: ["black", "gray", "white", "red"],
+    fuel: Fuel.GASOLINE,
 };
 console.log(car.model);
 for (var _i = 0, _a = car.colors; _i < _a.length; _i++) {
     var color = _a[_i];
-    console.log(car.brand + " " + car.model + " is available in " + color);
+    console.log(car.brand + " " + car.model + " is available in " + color + ".");
 }

@@ -1,0 +1,7 @@
+Function Return Types
+
+- Basic/Advanced Types
+- Void
+- Any
+- Unknown
+- Never
