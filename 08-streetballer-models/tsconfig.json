@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    // JavaScript Build Version
+    "target": "ES6",
+
+    // Modules
+    "module": "ES6",
+    "esModuleInterop": true,
+
+    // Libraries
+    "lib": ["ES2016", "DOM"],
+
+    // Compilation
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "noEmitOnError": true,
+
+    // Code Quality
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "removeComments": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
