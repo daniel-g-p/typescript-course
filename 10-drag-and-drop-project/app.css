@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Ubuntu Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.container {
+  margin: 3rem auto;
+  max-width: 48rem;
+}
+
+.header {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.header__title {
+  font-size: 2rem;
+}
+
+.form {
+  display: grid;
+  padding: 1rem;
+  border-width: 1px;
+  border-color: #000000;
+  border-style: solid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(3, 4rem);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.form__field--title {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.form__field--owner {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.form__field--due {
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.form__button {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  font-family: "Ubuntu Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.form__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.form__input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border-width: 1px;
+  border-color: #000000;
+  border-style: solid;
+  outline: none;
+  background-color: #ffffff;
+  font-family: "Ubuntu Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.form__input:focus {
+  background-color: lightgray;
+}
+
+.form__input--textarea {
+  resize: none;
+  font-size: 16px;
+}

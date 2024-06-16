@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop Project</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="ap.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">Project Tracker</h1>
+      </header>
+      <form class="form">
+        <div class="form__field form__field--text form__field--title">
+          <label for="title" class="form__label">Project Title</label>
+          <input
+            name="title"
+            id="title"
+            class="form__input form__input--text"
+          />
+        </div>
+        <div class="form__field form__field--text form__field--owner">
+          <label for="owner" class="form__label">Owner</label>
+          <input
+            name="owner"
+            id="owner"
+            class="form__input form__input--text"
+          />
+        </div>
+        <div class="form__field form__field--date form__field--due">
+          <label for="due" class="form__label">Due Date</label>
+          <input
+            name="due"
+            type="date"
+            id="due"
+            class="form__input form__input--date"
+          />
+        </div>
+        <button type="button" class="form__button">Add</button>
+      </form>
+      <ul class="list list--open">
+        <li class="list__item">
+          <h2 class="list__item-title">Project Title</h2>
+          <p class="list__item-description">Project Description</p>
+          <div class="list__item-tags">
+            <div class="list__item-tag list__item-tag--owner">Owner: Name</div>
+            <div class="list__item-tag list__item-tag--due">Due: Date</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list list--closed">
+        <li class="list__item">
+          <h2 class="list__item-title">Project Title</h2>
+          <p class="list__item-description">Project Description</p>
+          <div class="list__item-tags">
+            <div class="list__item-tag list__item-tag--owner">Owner: Name</div>
+            <div class="list__item-tag list__item-tag--due">Due: Date</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

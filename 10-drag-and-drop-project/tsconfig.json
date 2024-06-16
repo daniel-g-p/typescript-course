@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    // JavaScript Build Version
+    "target": "ES6",
+
+    // Modules
+    "module": "ES6",
+    "esModuleInterop": true,
+
+    // Libraries
+    "lib": ["ES6", "DOM"],
+
+    // Compilation
+    "sourceMap": true,
+    "noEmitOnError": true,
+
+    // Code Quality
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "removeComments": true
+  }
+}

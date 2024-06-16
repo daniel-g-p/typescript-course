@@ -5,5 +5,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daniel Giustini Perez",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/qrcode": "^1.5.5"
+  }
 }
